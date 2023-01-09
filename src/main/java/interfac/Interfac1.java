@@ -5,6 +5,7 @@
 package interfac;
 
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
@@ -177,8 +178,12 @@ public class Interfac1 extends javax.swing.JFrame {
         JFileChooser jFileChooser = new JFileChooser();
         FileNameExtensionFilter filtrado = new FileNameExtensionFilter("fdb & db", "fdb", "db");
         jFileChooser.setFileFilter(filtrado);
-        
-        int resouesta = jFileChooser.showOpenDialog(this);
+
+        int respuesta = jFileChooser.showOpenDialog(this);
+
+        String path = jFileChooser.getSelectedFile().getPath();
+
+        JOptionPane.showMessageDialog(null, path);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
