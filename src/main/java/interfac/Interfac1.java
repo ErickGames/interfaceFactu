@@ -178,11 +178,11 @@ public class Interfac1 extends javax.swing.JFrame {
         JFileChooser jFileChooser = new JFileChooser();
         FileNameExtensionFilter filtrado = new FileNameExtensionFilter("fdb & db", "fdb", "db");
         jFileChooser.setFileFilter(filtrado);
-
+        
         int respuesta = jFileChooser.showOpenDialog(this);
-
+        
         String path = jFileChooser.getSelectedFile().getPath();
-
+        
         JOptionPane.showMessageDialog(null, path);
     }//GEN-LAST:event_jButton1ActionPerformed
 
